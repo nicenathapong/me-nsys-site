@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <>
             <Head>
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+                <link href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet" />
             </Head>
             <Component {...pageProps} />
         </>
