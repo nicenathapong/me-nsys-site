@@ -42,7 +42,7 @@ export async function getSession({ req, res }: IContext): Promise<UserWithSessio
     if (!session) {
         return null;
     }
-    if (session.iat + config.session.timeOut < Date.now()) {
+    if ((session.iat * 1000) + config.session.timeOut < Date.now()) {
         await deleteSession(session, { req, res });
         return null;
     }
@@ -64,12 +64,16 @@ function _createToken(id: string) {
 }
 
 function _praseToken(token: string) {
-    return verify(token, config.encoder.secretKey) as null | ISession;
+    try {
+        return verify(token, config.encoder.secretKey) as null | ISession;
+    } catch (e) {
+        return null;
+    }
 }
 
 export async function clearSession() {
     const sessions = await getCollection('sessions');
-    await sessions.deleteMany({ at: { $lt: Date.now() - config.session.timeOut } });
+    await sessions.deleteMany({ iat: { $lt: Date.now() - config.session.timeOut } });
 }
 
 export interface ISession {
