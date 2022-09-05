@@ -9,41 +9,33 @@
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
 
         <link href="/css/main.css" rel="stylesheet" />
         <link href="/css/tailwind.css" rel="stylesheet" />
 
+        <link rel="icon" type="image/png" href="/images/nsys_logo_lite.png" />
         <title>nicenathapong</title>
     </head>
     <body>
-        <!-- <div
-            class="relative h-[75vh] bg-gray-100 overflow-hidden"
-            <div class="top-1/2 relative h-full overflow-hidden -rotate-[6deg]">
-                <div
-                    class="absolute w-screen h-screen bg-cover -top-1/2 -right-10 rotate-[6deg]"
-                    style="
-                        background-image: url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
-                    "
-                ></div>
-            </div>
-        </div> -->
-
         <div
-            class="flex h-[75vh] bg-cover bg-center"
-            style="
-                background-image: linear-gradient(
-                        90deg,
-                        rgba(0, 0, 0, 0.6),
-                        rgba(0, 0, 0, 0.4),
-                        rgba(0, 0, 0, 0)
-                    ),
-                    url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
-            "
+            class="flex h-[20vh] sm:h-[75vh] bg-cover bg-center thumnail_image"
         >
             <div class="flex w-full my-auto justify-start">
-                <div class="ml-[10vw] text-white">
-                    <p class="text-lg">สวัสดี! นี่หน้าแนะนำตัวของ</p>
-                    <h1 class="text-6xl font-bold">nicenathapong</h1>
+                <div class="sm:ml-[10vw] p-4 sm:p-0">
+                    <p class="text-lg text-black" data-aos="fade-right">
+                        สวัสดี! นี่คือหน้าแนะนำตัวของ
+                    </p>
+                    <h1
+                        class="text-4xl sm:text-6xl text-blue-400 font-bold drop-shadow-md"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                    >
+                        nicenathapong
+                    </h1>
                 </div>
             </div>
         </div>
@@ -53,52 +45,88 @@
                 <div class="mb-4">
                     <h1 class="text-2xl font-bold">มาทำความรู้จักกัน!</h1>
                     <p class="text-xs">
-                        อุตสาห์ค้น Google ไปหาวิธีแนะนำตัวคร่าวๆ มาเลยนะเนี่ย
+                        อุตส่าห์ค้น Google ไปหาวิธีแนะนำตัวคร่าวๆ มาเลยนะเนี่ย
                         555
                     </p>
                 </div>
-                <div class="grid grid-cols-4 gap-4">
-                    <div class="bg-white rounded shadow py-2 px-4">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+                >
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                    >
                         <p class="text-sm text-blue-400">ชื่อจริง</p>
                         <h1 class="font-semibold leading-[1.4rem]">
                             ณฐพงศ์ โสภาพล
                         </h1>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="50"
+                    >
                         <p class="text-sm text-blue-400">ชื่อเล่น</p>
                         <h1 class="font-semibold leading-[1.4rem]">ไนส์</h1>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
                         <p class="text-sm text-blue-400">ชื่อเกิด</p>
                         <h1 class="font-semibold leading-[1.4rem]">
                             วันจันทร์ที่ 6 เดือนมกราคม พ.ศ.2549
                         </h1>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                    >
                         <p class="text-sm text-blue-400">อาศัยอยู่ที่</p>
                         <h1 class="font-semibold leading-[1.4rem]">
                             ปทุมธานี ประเทศไทย
                         </h1>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
                         <p class="text-sm text-blue-400">สถานะ</p>
-                        <h1 class="font-semibold leading-[1.4rem]">
+                        <a
+                            class="font-semibold leading-[1.4rem] transition hover:text-red-400"
+                            href="https://m307.dev"
+                        >
                             มีแฟนแล้ว
-                        </h1>
+                        </a>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                    >
                         <p class="text-sm text-blue-400">ศึกษาอยู่ที่</p>
                         <h1 class="font-semibold leading-[1.4rem]">
                             โรงเรียนฤทธิยะวรรณาลัย
                         </h1>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
                         <p class="text-sm text-blue-400">สิ่งที่ชอบ</p>
                         <h1 class="font-semibold leading-[1.4rem]">
                             เทคโนโลยี
                         </h1>
                     </div>
-                    <div class="bg-white rounded shadow py-2 px-4">
+                    <div
+                        class="bg-white rounded shadow py-2 px-4"
+                        data-aos="fade-up"
+                        data-aos-delay="350"
+                    >
                         <p class="text-sm text-blue-400">อาหารที่ชอบ</p>
                         <h1 class="font-semibold leading-[1.4rem]">
                             มาม่า ok รสฮอทโคเรียน
@@ -117,20 +145,25 @@
                         เรียกว่ากลุ่มที่ผมทำงานด้วยน่าจะดีกว่า
                     </p>
                 </div>
-                <div class="grid grid-cols-3 gap-8">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+                >
                     <div
                         class="relative bg-gradient-to-tr from-orange-500 to-orange-200 text-white mt-4 p-4 pt-14 rounded-xl shadow-lg"
+                        data-aos="fade-up"
                     >
                         <img
                             src="https://cdn.discordapp.com/attachments/706978463814516809/1016260256931786762/unknown.png"
                             class="absolute w-16 -top-4 left-4 rounded-md shadow-md"
                             alt="nsys_logo"
                         />
-                        <h1
-                            class="absolute top-3 left-24 text-xl drop-shadow-md font-bold"
+                        <a
+                            class="absolute top-3 left-24 text-xl drop-shadow-md font-bold transition hover:scale-105"
+                            href="https://www.nsys.site/"
+                            target="_blank"
                         >
                             nSys
-                        </h1>
+                        </a>
                         <p>
                             <span class="font-semibold">ตำแหน่ง </span>
                             CEO, Developer
@@ -141,17 +174,21 @@
                     </div>
                     <div
                         class="relative bg-gradient-to-tr from-orange-500 to-orange-200 text-white mt-4 p-4 pt-14 rounded-xl shadow-lg"
+                        data-aos="fade-up"
+                        data-aos-delay="50"
                     >
                         <img
                             src="https://cdn.discordapp.com/attachments/706978463814516809/1016259677429960704/unknown.png"
                             class="absolute w-16 -top-4 left-4 rounded-md shadow-md"
                             alt="aona_shop_logo"
                         />
-                        <h1
-                            class="absolute top-3 left-24 text-xl drop-shadow-md font-bold"
+                        <a
+                            class="absolute top-3 left-24 text-xl drop-shadow-md font-bold transition hover:scale-105"
+                            href="https://aonashop.dev"
+                            target="_blank"
                         >
                             AONA Shop
-                        </h1>
+                        </a>
                         <p>
                             <span class="font-semibold">ตำแหน่ง </span>
                             Header, Developer
@@ -162,17 +199,21 @@
                     </div>
                     <div
                         class="relative bg-gradient-to-tr from-orange-500 to-orange-200 text-white mt-4 p-4 pt-14 rounded-xl shadow-lg"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
                     >
                         <img
                             src="https://cdn.discordapp.com/attachments/706978463814516809/1016256324784377877/unknown.png"
                             class="absolute w-16 -top-4 left-4 rounded-md shadow-md"
                             alt="rdcw_logo"
                         />
-                        <h1
-                            class="absolute top-3 left-24 text-xl drop-shadow-md font-bold"
+                        <a
+                            class="absolute top-3 left-24 text-xl drop-shadow-md font-bold transition hover:scale-105"
+                            href="https://rdcw.xyz"
+                            target="_blank"
                         >
                             RDCW
-                        </h1>
+                        </a>
                         <p>
                             <span class="font-semibold">ตำแหน่ง </span>
                             Developer
@@ -193,7 +234,9 @@
                         ผมมีผลงานอะไรที่ดูเป็นชิ้นเป็นอันบ้างนะ?
                     </p>
                 </div>
-                <div class="grid grid-cols-3 gap-8">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+                >
                     <div
                         class="relative p-4 pb-16 rounded-lg bg-cover bg-top shadow-lg"
                         style="
@@ -203,8 +246,9 @@
                                     rgba(255, 255, 255, 1),
                                     rgba(255, 255, 255, 0.4)
                                 ),
-                                url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
+                                url(/images/nsys2.png);
                         "
+                        data-aos="fade-up"
                     >
                         <p class="text-xs text-blue-400">nSys</p>
                         <h1 class="-mt-1 text-blue-400 text-xl font-bold">
@@ -228,8 +272,10 @@
                                     rgba(255, 255, 255, 1),
                                     rgba(255, 255, 255, 0.4)
                                 ),
-                                url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
+                                url(/images/nsyslava.png);
                         "
+                        data-aos="fade-up"
+                        data-aos-delay="50"
                     >
                         <p class="text-xs text-blue-400">nSys</p>
                         <h1 class="-mt-1 text-blue-400 text-xl font-bold">
@@ -255,8 +301,10 @@
                                     rgba(255, 255, 255, 1),
                                     rgba(255, 255, 255, 0.4)
                                 ),
-                                url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
+                                url(/images/aona_shop_website.png);
                         "
+                        data-aos="fade-up"
+                        data-aos-delay="100"
                     >
                         <p class="text-xs text-blue-400">AONA Shop</p>
                         <h1 class="-mt-1 text-blue-400 text-xl font-bold">
@@ -282,8 +330,10 @@
                                     rgba(255, 255, 255, 1),
                                     rgba(255, 255, 255, 0.4)
                                 ),
-                                url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
+                                url(/images/beamx_website.png);
                         "
+                        data-aos="fade-up"
+                        data-aos-delay="150"
                     >
                         <p class="text-xs text-blue-400">RDCW</p>
                         <h1 class="-mt-1 text-blue-400 text-xl font-bold">
@@ -309,8 +359,10 @@
                                     rgba(255, 255, 255, 1),
                                     rgba(255, 255, 255, 0.4)
                                 ),
-                                url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
+                                url(/images/emiko_website.png);
                         "
+                        data-aos="fade-up"
+                        data-aos-delay="200"
                     >
                         <p class="text-xs text-blue-400">RDCW</p>
                         <h1 class="-mt-1 text-blue-400 text-xl font-bold">
@@ -336,8 +388,10 @@
                                     rgba(255, 255, 255, 1),
                                     rgba(255, 255, 255, 0.4)
                                 ),
-                                url(https://cdn.discordapp.com/attachments/706978463814516809/1016237552694480926/unknown.png);
+                                url(/images/gk_website.png);
                         "
+                        data-aos="fade-up"
+                        data-aos-delay="250"
                     >
                         <p class="text-xs text-blue-400">RDCW</p>
                         <h1 class="-mt-1 text-blue-400 text-xl font-bold">
@@ -357,5 +411,99 @@
                 </div>
             </div>
         </div>
+
+        <div class="bg-blue-400 text-white py-4">
+            <div class="w-fit mx-auto">
+                <div class="p-4">
+                    <div class="text-center mb-4">
+                        <h1 class="font-semibold text-lg drop-shadow-md">
+                            ติดตามผมได้ที่
+                        </h1>
+                        <p class="text-xs text-white/60">
+                            ปล. ชื่อผมในทุกๆ ที่ มันเหมือนกันหมดเลย 555
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col sm:flex-row justify-center space-x-0 space-y-2 sm:space-x-8 sm:space-y-0"
+                    >
+                        <a
+                            class="text-sm text-center"
+                            href="https://www.facebook.com/nicenathapong/"
+                            target="_blank"
+                            >facebook</a
+                        >
+                        <a
+                            class="text-sm text-center"
+                            href="https://www.instagram.com/nicenathapong/"
+                            target="_blank"
+                            >instagram</a
+                        >
+                        <a
+                            class="text-sm text-center"
+                            href="https://www.youtube.com/channel/UCaCIyLlRZmNtVCRpNfKBMkw"
+                            target="_blank"
+                            >youtube</a
+                        >
+                    </div>
+                </div>
+                <div class="w-[200px] border-b border-white mx-auto"></div>
+                <div class="p-4">
+                    <div class="text-center mb-4">
+                        <h1 class="font-semibold text-lg drop-shadow-md">
+                            Partners
+                        </h1>
+                        <p class="text-xs text-white/60">
+                            หรือจะเรียกว่าคนในสาย Dev ที่รู้จักกันก็ได้ 555
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap flex-col sm:flex-row justify-center space-x-0 space-y-2 sm:space-x-8 sm:space-y-0"
+                    >
+                        <a
+                            class="text-sm text-center"
+                            href="https://www.opecgame.in.th/"
+                            target="_blank"
+                            >opecgame</a
+                        >
+                        <a
+                            class="text-sm text-center"
+                            href="https://www.masuru.in.th/"
+                            target="_blank"
+                            >Masuru</a
+                        >
+                        <a class="text-sm text-center">Mikihina</a>
+                        <a class="text-sm text-center">Ayaki</a>
+                        <a
+                            class="text-sm text-center"
+                            href="https://pusanstudio.com/"
+                            target="_blank"
+                            >PusanStudio</a
+                        >
+                        <a
+                            class="text-sm text-center"
+                            href="https://m307.dev"
+                            target="_blank"
+                            >M-307</a
+                        >
+                        <a
+                            class="text-sm text-center"
+                            href="https://tanakorn.net/"
+                            target="_blank"
+                            >DearTanakorn</a
+                        >
+                        <a
+                            class="text-sm text-center"
+                            href="https://maythiwat.com/"
+                            target="_blank"
+                            >Maythiwat</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
